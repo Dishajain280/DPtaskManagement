@@ -1,0 +1,115 @@
+:root {
+    --bg: #fac751;
+    --card: rgba(249, 243, 214, 0.707);
+    --text:rgba(67, 67, 67, 0.71);
+    --accent:rgb(255, 254, 200);
+}
+
+body.dark {
+    --bg: #0f1720;
+    --card: #464648;
+    --text: white;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+}
+
+.container{
+width: 100%;
+max-width: 50%;
+background: var(--card);
+padding: 20px;
+border-radius: 12px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+h1{
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggle{
+    cursor: pointer;
+    border : none;
+    background: var(--accent);
+    border-radius: 10px;
+    color: rgb(71, 71, 71);
+    padding: 6px 12px;
+}
+
+.input-group{
+    display: flex;
+    margin: 20px 0;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+
+.add-btn{
+    margin-left: 10px;
+    padding: 10px 15px;
+    background: var(--accent);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color: black;
+}
+
+.filters button {
+border: none;
+padding: 6px 10px;
+cursor: pointer;
+border-radius: 7px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    background: var(--bg);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+li input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: rgb(77, 37, 37);
+    cursor: pointer;
+}
+
+.actions button {
+    margin-left: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 4px 8px;
+}

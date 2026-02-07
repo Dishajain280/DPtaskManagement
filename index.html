@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>TASK MANAGER</h1>
+        <button class="toggle" onclick="toggleTheme()">Night Mode</button>
+      </header>
+
+      <div class="input-group">
+        <input id="taskInput" placeholder="Enter New Task" />
+        <button class="add-btn" onclick="addTask()">Add</button>
+      </div>
+
+      <div class="filters">
+        <button onclick="setFilter('all')">All Tasks</button>
+        <button onclick="setFilter('completed')">Completed Tasks</button>
+        <button onclick="setFilter('pending')">Pending Tasks</button>
+      </div>
+
+      <ul id="taskList"></ul>
+    </div>
+  </body>
+</html>
